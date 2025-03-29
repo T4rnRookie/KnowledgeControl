@@ -1,0 +1,42 @@
+<!-- views/error.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 50px;
+        }
+        .error-message {
+            color: #d9534f;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Error</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container error-container">
+        <h2>Oops! Something went wrong.</h2>
+        <p class="error-message"><%= message %></p>
+        <a href="/" class="btn">Go to Homepage</a>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

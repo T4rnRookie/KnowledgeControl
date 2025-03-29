@@ -1,0 +1,39 @@
+<!-- views/editor.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Document - Knowledge Base System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Edit Document</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2><%= document.title %></h2>
+        <p>Category: <%= document.category %></p>
+        <p>Tags: <%= document.tags.join(', ') %></p>
+        
+        <div class="editor-container">
+            <textarea id="editor" data-document-id="<%= document._id %>"><%= document.content %></textarea>
+        </div>
+        
+        <button id="save-document" class="btn">Save Document</button>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

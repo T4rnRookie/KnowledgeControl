@@ -1,0 +1,30 @@
+{
+  "name": "knowledge-base-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-ejs-layouts": "^2.5.1",
+    "highlight.js": "^11.10.0",
+    "jsdom": "^25.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "marked": "^14.1.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.6.3",
+    "multer": "^1.4.5-lts.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.6"
+  }
+}

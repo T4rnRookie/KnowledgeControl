@@ -1,0 +1,21 @@
+/* Minimal Bootstrap CSS */
+:root {
+    --bs-blue: #0d6efd;
+    --bs-primary: #0d6efd;
+  }
+  
+  .container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+  @media (min-width: 576px) { .container { max-width: 540px; } }
+  @media (min-width: 768px) { .container { max-width: 720px; } }
+  @media (min-width: 992px) { .container { max-width: 960px; } }
+  @media (min-width: 1200px) { .container { max-width: 1140px; } }
+  
+  .row { display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+  .col { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+  
+  .btn { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; }
+  .btn-primary { color: #fff; background-color: var(--bs-primary); border-color: var(--bs-primary); }
+  
+  .form-control { display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem; }
+  
+  /* Add more styles as needed */
